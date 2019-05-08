@@ -9,16 +9,16 @@ UnitPrice: Unit price. Numeric, Product price per unit in sterling.
 CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer. 
 Country: Country name. Nominal, the name of the country where each customer resides.
 
-# create retails index,create index_config
-# group by invoice num,iterate over each group (each invoice)## iterate over rows in this invoice dataframe
-# fling to elasticsearch
+create retails index,create index_config
+group by invoice num,iterate over each group (each invoice)## iterate over rows in this invoice dataframe
+fling to elasticsearch
 
 
-# Aggregation
-# Here we are querying
-# for documents that contain the ingredient "StockCodes": "21523".
-# Then we scrape inside those documents for other order that co-occur
-# with "StockCodes": "21523"
-# we use the aggregation "significant_terms"
-# which orders rarer correlated words first.
+Aggregation
+Here we are querying
+for documents that contain the ingredient "StockCodes": "21523".
+Then we scrape inside those documents for other order that co-occur
+with "StockCodes": "21523"
+we use the aggregation "significant_terms"
+which orders rarer correlated words first.
 
